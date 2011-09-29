@@ -2,7 +2,7 @@ package Facebook::Graph::Publish::Ngsdevorg::Listen;
 
 use Facebook::Graph;
 BEGIN {
-  $Facebook::Graph::Publish::Listen::VERSION = '0.0001';
+  $Facebook::Graph::Publish::Ngsdevorg::Listen::VERSION = '0.0001';
 }
 
 use Any::Moose;
@@ -16,8 +16,8 @@ has music_uri => (
 );
 
 sub set_music_uri {
-    my ($self, $music) = @_;
-    $self->music_uri($music);
+    my ($self, $music_uri) = @_;
+    $self->music_uri($music_uri);
     return $self;
 }
 
